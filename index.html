@@ -1,0 +1,62 @@
+
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800;900&family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>bookmark</title>
+</head>
+
+<body class="">
+
+  <div class="container d-flex flex-column align-items-center justify-content-between  ">
+    <div class="adress my-5 ">
+      <h1>Bookmark your favorite sites</h1>
+    </div> 
+    <div class="site-name my-4 w-100 fw-bold">
+      <label for=""> Site Name</label>
+      <input id="siteName" type="text" class="form-control" placeholder="bookmark name">
+    </div>
+    <div class="site-url my-4 w-100 fw-bold">
+      <label for=""> Site url</label>
+      <input id="siteUrl" type="text" class="form-control" placeholder="website-url">
+       <div class="alert alert-danger" id="alert">
+        invalid url 
+      </div>
+    </div>
+
+    <button onclick="main()" class="btn btn-danger px-4 py-2 my-4">submit</button>
+     
+
+    <table class="table text-center my-4">
+      <thead>
+        <th>index</th>
+        <th>website name</th>
+        <th>visit</th>
+        <th>delete</th>
+      </thead>
+      <tbody id="tBody">
+    
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
